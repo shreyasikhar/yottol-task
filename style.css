@@ -89,7 +89,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 5rem;
+    margin-right: 3.5rem;
 }
 
 .form-group button {
@@ -129,7 +129,6 @@ body {
 .table-container table thead {
     background-color: #2274A5;
     background: linear-gradient(90deg, #2274A5 30%, #E51A4B 80%, #E51A4B 100%);
-    padding: 8px 15rem;
     color: #fff;
 }
 

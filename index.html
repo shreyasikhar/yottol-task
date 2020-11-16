@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yottol Task</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importing Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <script>
+        var width = window.matchMedia("(max-width: 767px)")
+    </script>
+    <div class="transaction-container">
+        <p class="text-heading">Transactions</p>
+        <form class="form-container">
+            <div class="form-group">
+                <img src="images/binder.svg" alt=""/>
+                <select name="" id="">
+                    <option value="" selected>Select portfolio</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <img src="images/folder.svg" alt=""/>
+                <select name="" id="">
+                    <option value="" selected>Select transaction type</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="button" name="viewDetails">View Details</button>
+            </div>
+        </form>
+        <div class="table-container">
+            <table id="table1">
+                <thead>
+                    <th>P/R</th>
+                    <th>Fund Name</th>
+                    <th>Category</th>
+                    <th>Amount (.Rs)</th>
+                    <th>NAV*</th>
+                    <th>
+                        <script>
+                            if(width.matches) {
+                                document.write("Date")
+                            }
+                            else {
+                                document.write("TimeStamp")
+                            }
+                        </script>
+                    </th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-rel="colored-blue">
+                            <script>
+                                if(width.matches) {
+                                    document.write("P")
+                                }
+                                else {
+                                    document.write("Purchase")
+                                }
+                            </script>
+                        </td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1,25,356")
+                                }
+                                else {
+                                    document.write("1,25,356.00")
+                                }
+                            </script>
+                        </td>
+                        <td>104.52</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td data-rel="colored-red">
+                            <script>
+                                if(width.matches) {
+                                    document.write("R")
+                                }
+                                else {
+                                    document.write("Redemption")
+                                }
+                            </script>
+                        </td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1,25,356")
+                                }
+                                else {
+                                    document.write("1,25,356.00")
+                                }
+                            </script>
+                        </td>
+                        <td>104.52</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td data-rel="colored-blue">
+                            <script>
+                                if(width.matches) {
+                                    document.write("P")
+                                }
+                                else {
+                                    document.write("Purchase")
+                                }
+                            </script>
+                        </td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1,25,356")
+                                }
+                                else {
+                                    document.write("1,25,356.00")
+                                }
+                            </script>
+                        </td>
+                        <td>104.52</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td data-rel="colored-red">
+                            <script>
+                                if(width.matches) {
+                                    document.write("R")
+                                }
+                                else {
+                                    document.write("Redemption")
+                                }
+                            </script>
+                        </td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1,25,356")
+                                }
+                                else {
+                                    document.write("1,25,356.00")
+                                }
+                            </script>
+                        </td>
+                        <td>104.52</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("Completed")
+                                }
+                                else {
+                                    document.write("Pending")
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table2">
+                <thead>
+                    <th>SIP</th>
+                    <th>Fund Name</th>
+                    <th>Category</th>
+                    <th>Installment Amount</th>
+                    <th>Completed Installments</th>
+                    <script>
+                        if(!width.matches) {
+                            document.write("<th>No. of Installments</th>")
+                        }
+                    </script>
+                    <th>
+                        <script>
+                            if(width.matches) {
+                                document.write("Date")
+                            }
+                            else {
+                                document.write("TimeStamp")
+                            }
+                        </script>
+                    </th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-rel="colored-blue">SIP</td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>10,000</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1000/UC")
+                                }
+                                else {
+                                    document.write("1000")
+                                }
+                            </script>
+                        </td>
+                        <script>
+                            if(!width.matches) {
+                                document.write("<td>Unit Cancelled</td>")
+                            }
+                        </script>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td data-rel="colored-red">
+                            <script>
+                                if(width.matches) {
+                                    document.write("CSIP")
+                                }
+                                else {
+                                    document.write("Cease SIP")
+                                }
+                            </script>
+                        </td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>10,000</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1000/UC")
+                                }
+                                else {
+                                    document.write("1000")
+                                }
+                            </script>
+                        </td>
+                        <script>
+                            if(!width.matches) {
+                                document.write("<td>Unit Cancelled</td>")
+                            }
+                        </script>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td data-rel="colored-blue">SIP</td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>10,000</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1000/UC")
+                                }
+                                else {
+                                    document.write("1000")
+                                }
+                            </script>
+                        </td>
+                        <script>
+                            if(!width.matches) {
+                                document.write("<td>Unit Cancelled</td>")
+                            }
+                        </script>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td data-rel="colored-red">
+                            <script>
+                                if(width.matches) {
+                                    document.write("CSIP")
+                                }
+                                else {
+                                    document.write("Cease SIP")
+                                }
+                            </script>
+                        </td>
+                        <td>Aditya Birla Sun Life Frontline Equity...</td>
+                        <td>Equity- Large Cap</td>
+                        <td>10,000</td>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("1000/UC")
+                                }
+                                else {
+                                    document.write("1000")
+                                }
+                            </script>
+                        </td>
+                        <script>
+                            if(!width.matches) {
+                                document.write("<td>Unit Cancelled</td>")
+                            }
+                        </script>
+                        <td>
+                            <script>
+                                if(width.matches) {
+                                    document.write("12.03.20")
+                                }
+                                else {
+                                    document.write("13.32 12.03.20")
+                                }
+                            </script>
+                        </td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="base-container">
+            <h4>NOTES:</h4>
+            <ol>
+                <li>P/R = Purchase / Redemption</li>
+                <li>NAV* = If completed, then actual, otherwise, temporary</li>
+                <li>UC = Until Completed</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

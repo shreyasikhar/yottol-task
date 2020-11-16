@@ -1,0 +1,198 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 767px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+}
+
+.transaction-container {
+    width: 60%;
+    padding: 15px;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .transaction-container {
+        width: 100%;
+    }
+}
+
+.text-heading {
+    font-size: 3rem !important;
+    margin: 0;
+    padding: 1rem;
+}
+
+.form-container {
+    width: 60%;
+    box-shadow: 4px 5px 10px #ccc;
+    padding: 20px 10px;
+    margin-right: 2.8rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .form-container {
+        width: 100%;
+    }
+}
+
+.form-group {
+    height: 3rem;
+    display: inline-flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.form-group > * {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group img {
+    width: 15%;
+    color: #2274A5;
+}
+
+.form-group select {
+    width: 75%;
+    padding: 0 8px;
+    color: #777;
+    border: 1px solid #2274A5;
+    background-color: #fff;
+    font-size: inherit;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='navy' height='40' viewBox='0 0 30 30' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 0.2rem;
+}
+
+.form-group:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.form-group button {
+    padding: 8px 16px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #fff;
+    background: #2274A5;
+    background: linear-gradient(90deg, #2274A5 30%, #E51A4B 80%, #E51A4B 100%);
+    border: none;
+}
+
+.table-container {
+    margin: 30px 0;
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+}
+
+.table-container table {
+    box-shadow: 4px 5px 10px #ccc;
+    margin-bottom: 10px;
+    border-spacing: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .table-container #table1 {
+        order: 2;
+        font-weight: bold;
+    }
+    .table-container #table2 {
+        order: 1;
+        font-weight: bold;
+    }
+}
+
+.table-container table thead {
+    background-color: #2274A5;
+    background: linear-gradient(90deg, #2274A5 30%, #E51A4B 80%, #E51A4B 100%);
+    padding: 8px 15rem;
+    color: #fff;
+}
+
+.table-container table thead th:first-of-type{
+    overflow: auto;
+    perspective: 1px;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+}
+
+.table-container table thead th:last-of-type{
+    overflow: auto;
+    perspective: 1px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+}
+
+.table-container table tbody tr {
+    box-shadow: 2px 3px 2px #ccc;
+    overflow: auto;
+    perspective: 1px;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    margin: 5px 0;
+    padding: 2rem;
+    text-align: center;
+}
+
+table tr td[data-rel='colored-blue'] {
+    background-color: #2274A5;
+    border-radius: 20px;
+    color: #fff;
+    padding: 1px 0;
+    margin: 3px 0;
+} 
+
+table tr td[data-rel='colored-red'] {
+    background-color: #E51A4B;
+    border-radius: 20px;
+    color: #fff;
+    padding: 1px 0px;
+    margin: 3px 0;
+}
+
+
+.base-container {
+    display: none;
+}
+
+.base-container h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.base-container ol {
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .base-container {
+        display: block;
+    }
+}

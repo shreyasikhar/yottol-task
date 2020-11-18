@@ -155,14 +155,14 @@ small {
 }
 
 .table-container table thead th:first-of-type{
-    /* overflow: auto; */
+    overflow: auto;
     perspective: 1px;
     border-top-left-radius: 20px; 
     border-bottom-left-radius: 20px;
 }
 
 .table-container table thead th:last-of-type{
-    /* overflow: auto; */
+    overflow: auto;
     perspective: 1px;
     border-top-right-radius: 20px; 
     border-bottom-right-radius: 20px; 

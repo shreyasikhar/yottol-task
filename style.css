@@ -23,7 +23,7 @@ body {
 }
 
 .transaction-container {
-    width: 60%;
+    width: 65%;
     padding: 6px;
     margin: 0.6rem;
 }
@@ -43,7 +43,7 @@ body {
 
 .form-container {
     width: 60%;
-    box-shadow: 4px 5px 10px #ccc;
+    box-shadow: 3px 2px 5px 2px #ccc;
     padding: 12px 6px;
     /* margin-right: 2.8rem; */
 }
@@ -89,6 +89,10 @@ body {
     background-position-y: 0.5rem;
 }
 
+.form-group select:hover {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 767px) {
     .form-group select {
         font-size: 12px;
@@ -108,11 +112,15 @@ body {
     padding: 4px 12px;
     font-family: inherit;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #fff;
     background: #2274A5;
     background: linear-gradient(90deg, #2274A5 25%, #E51A4B 80%, #E51A4B 100%);
     border: none;
+}
+
+.form-group button:hover {
+    cursor: pointer;
 }
 
 small {
@@ -153,6 +161,10 @@ small {
     color: #fff;
 }
 
+.table-container table thead th {
+    padding: 5px 0 !important;
+}
+
 .table-container table thead th:first-of-type{
     overflow: auto;
     perspective: 1px;
@@ -176,7 +188,7 @@ small {
 }
 
 .table-container table tbody tr {
-    box-shadow: 2px 3px 2px #ccc;
+    box-shadow: 3px 2px 5px 2px #ccc;
     overflow: auto;
     perspective: 1px;
     border-top-left-radius: 20px; 
@@ -217,17 +229,17 @@ small {
     }
 }
 
-.table-container table tr td {
+.table-container table tbody tr td {
     white-space: nowrap;
-    margin: 2rem 0;
+    padding: 5px 0 !important;
 }
 
 .table-container table tr td[data-rel='colored-blue'] {
     background-color: #2274A5;
     border-radius: 20px;
     color: #fff;
-    padding: 1px 0;
-    margin: 3px 0;
+    padding: 1px;
+    margin-left: 1rem !important;
 } 
 
 .table-container table tr td[data-rel='colored-red'] {
@@ -241,12 +253,14 @@ small {
 
 .base-container {
     display: none;
+    box-shadow: 3px 2px 5px 2px #ccc;
+    padding: 1.5rem;
+    margin: 2rem 0.5rem;
 }
 
 .base-container h4 {
     margin: 0;
     padding: 0;
-    margin-top: 2rem;
 }
 
 .base-container ol {

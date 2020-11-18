@@ -2,6 +2,9 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -20,7 +23,7 @@ body {
 }
 
 .transaction-container {
-    width: 85%;
+    width: 60%;
     padding: 6px;
     margin: 0.6rem;
 }
@@ -42,12 +45,12 @@ body {
     width: 60%;
     box-shadow: 4px 5px 10px #ccc;
     padding: 12px 6px;
-    margin-right: 2.8rem;
+    /* margin-right: 2.8rem; */
 }
 
 @media only screen and (max-width: 767px) {
     .form-container {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -73,7 +76,7 @@ body {
     width: 75%;
     padding: 0 8px;
     color: #777;
-    font-size: 12px;
+    font-size: 14px;
     border: 1px solid #2274A5;
     background-color: #fff;
     border-radius: 3px;
@@ -83,7 +86,14 @@ body {
     background-image: url("data:image/svg+xml;utf8,<svg fill='navy' height='40' viewBox='0 0 30 30' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     background-repeat: no-repeat;
     background-position-x: 100%;
-    background-position-y: 0.2rem;
+    background-position-y: 0.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .form-group select {
+        font-size: 12px;
+        background-position-y: 0rem;
+    }
 }
 
 .form-group:last-child {
@@ -101,7 +111,7 @@ body {
     font-size: 12px;
     color: #fff;
     background: #2274A5;
-    background: linear-gradient(90deg, #2274A5 30%, #E51A4B 80%, #E51A4B 100%);
+    background: linear-gradient(90deg, #2274A5 25%, #E51A4B 80%, #E51A4B 100%);
     border: none;
 }
 
@@ -118,7 +128,7 @@ small {
 .table-container {
     width: 100%;
     display: grid;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .table-container table {
@@ -140,19 +150,19 @@ small {
 
 .table-container table thead {
     background-color: #2274A5;
-    background: linear-gradient(90deg, #2274A5 30%, #E51A4B 80%, #E51A4B 100%);
+    background: linear-gradient(90deg, #2274A5 25%, #E51A4B 80%, #E51A4B 100%);
     color: #fff;
 }
 
 .table-container table thead th:first-of-type{
-    overflow: auto;
+    /* overflow: auto; */
     perspective: 1px;
     border-top-left-radius: 20px; 
     border-bottom-left-radius: 20px;
 }
 
 .table-container table thead th:last-of-type{
-    overflow: auto;
+    /* overflow: auto; */
     perspective: 1px;
     border-top-right-radius: 20px; 
     border-bottom-right-radius: 20px; 
@@ -169,6 +179,11 @@ small {
     margin: 10px 0;
     padding: 2.5rem 2rem;
     text-align: center;
+}
+
+.table-container table thead .bold-sm {
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .table-container table tbody tr .bold-sm {

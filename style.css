@@ -132,7 +132,6 @@ small {
 }
 
 .table-container table {
-    /* box-shadow: 4px 5px 10px #ccc; */
     margin-top: 2rem;
     border-spacing: 0;
 }
@@ -159,6 +158,10 @@ small {
     perspective: 1px;
     border-top-left-radius: 20px; 
     border-bottom-left-radius: 20px;
+    -moz-border-radius-top-left: 20px;
+    -moz-border-radius-bottom-left: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
 }
 
 .table-container table thead th:last-of-type{
@@ -166,6 +169,10 @@ small {
     perspective: 1px;
     border-top-right-radius: 20px; 
     border-bottom-right-radius: 20px; 
+    -moz-border-radius-top-right: 20px;
+    -moz-border-radius-bottom-right: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
 }
 
 .table-container table tbody tr {

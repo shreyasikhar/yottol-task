@@ -20,33 +20,34 @@ body {
 }
 
 .transaction-container {
-    width: 60%;
-    padding: 15px;
-    margin-right: 2rem;
+    width: 85%;
+    padding: 6px;
+    margin: 0.6rem;
 }
 
 @media only screen and (max-width: 767px) {
     .transaction-container {
         width: 100%;
+        border: 1px solid #ccc;
     }
 }
 
 .text-heading {
     font-size: 3rem !important;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .form-container {
     width: 60%;
     box-shadow: 4px 5px 10px #ccc;
-    padding: 20px 10px;
+    padding: 12px 6px;
     margin-right: 2.8rem;
 }
 
 @media only screen and (max-width: 767px) {
     .form-container {
-        width: 100%;
+        width: 95%;
     }
 }
 
@@ -72,13 +73,13 @@ body {
     width: 75%;
     padding: 0 8px;
     color: #777;
+    font-size: 12px;
     border: 1px solid #2274A5;
     background-color: #fff;
-    font-size: inherit;
     border-radius: 3px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: transparent;
+    /* background: transparent; */
     background-image: url("data:image/svg+xml;utf8,<svg fill='navy' height='40' viewBox='0 0 30 30' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     background-repeat: no-repeat;
     background-position-x: 100%;
@@ -90,28 +91,39 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-right: 3.5rem;
+    margin-bottom: 0;
 }
 
 .form-group button {
-    padding: 8px 16px;
+    padding: 4px 12px;
     font-family: inherit;
     font-weight: bold;
+    font-size: 12px;
     color: #fff;
     background: #2274A5;
     background: linear-gradient(90deg, #2274A5 30%, #E51A4B 80%, #E51A4B 100%);
     border: none;
 }
 
+small {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+    small {
+        font-size: 8px;
+    }
+}
+
 .table-container {
-    margin: 30px 0;
     width: 100%;
     display: grid;
     overflow: hidden;
 }
 
 .table-container table {
-    box-shadow: 4px 5px 10px #ccc;
-    margin-bottom: 10px;
+    /* box-shadow: 4px 5px 10px #ccc; */
+    margin-top: 2rem;
     border-spacing: 0;
 }
 
@@ -159,7 +171,36 @@ body {
     text-align: center;
 }
 
-table tr td[data-rel='colored-blue'] {
+.table-container table tbody tr .bold-sm {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .table-container table tbody tr .bold-sm {
+        font-size: 10px;
+        font-weight: bold;
+    } 
+}
+
+@media only screen and (max-width: 767px) {
+    .table-container table tbody tr .bold-xs {
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .table-container table thead .bold-xs {
+        font-size: 8px;
+        font-weight: bold;
+    }
+}
+
+.table-container table tr td {
+    white-space: nowrap;
+    margin: 2rem 0;
+}
+
+.table-container table tr td[data-rel='colored-blue'] {
     background-color: #2274A5;
     border-radius: 20px;
     color: #fff;
@@ -167,11 +208,11 @@ table tr td[data-rel='colored-blue'] {
     margin: 3px 0;
 } 
 
-table tr td[data-rel='colored-red'] {
+.table-container table tr td[data-rel='colored-red'] {
     background-color: #E51A4B;
     border-radius: 20px;
     color: #fff;
-    padding: 1px 0px;
+    padding: 1px 0;
     margin: 3px 0;
 }
 
@@ -183,9 +224,11 @@ table tr td[data-rel='colored-red'] {
 .base-container h4 {
     margin: 0;
     padding: 0;
+    margin-top: 2rem;
 }
 
 .base-container ol {
+    margin: 0.3rem 0;
     padding-left: 1rem;
     font-weight: bold;
 }
